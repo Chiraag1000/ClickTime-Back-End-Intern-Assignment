@@ -1,0 +1,65 @@
+@use 'styles/theme.scss';
+
+.button {
+	border-radius: 3px;
+	transition: background-color 0.15s ease-out, border-color 0.15s ease-out;
+	outline-width: 0;
+}
+
+.primary {
+	@extend .button;
+	background-color: theme.color(blue-brand);
+	border: 1px solid theme.color(blue-brand);
+
+	&:hover {
+		background-color: theme.color(blue-dark25);
+		border-color: theme.color(blue-dark25);
+	}
+	&:active {
+		background-color: theme.color(blue-dark45);
+		border-color: theme.color(blue-dark45);
+		outline-width: 0;
+	}
+	&:disabled,
+	&[disabled] {
+		background-color: theme.color(grey20);
+		border-color: theme.color(grey20);
+	}
+}
+
+.secondary {
+	@extend .button;
+	background-color: theme.color(white);
+	border: 1px solid theme.color(grey15);
+
+	&:hover {
+		border-color: theme.color(grey40);
+	}
+	&:active {
+		background-color: theme.color(grey05);
+		outline-width: 0;
+	}
+	&:disabled,
+	&[disabled] {
+		background-color: theme.color(grey20);
+		border-color: theme.color(grey20);
+	}
+}
+
+.icon {
+	@extend .button;
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.standard {
+	margin: 0.25rem;
+	padding: 0.5rem 1.15rem;
+};
+
+.fill-container {
+	height: 100%;
+	width: 100%;
+};

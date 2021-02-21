@@ -1,0 +1,14 @@
+[
+	{
+		"name": "Jane Doe",
+		"wins": 8,
+		"losses": 9,
+		"id": 1
+	},
+	{
+		"name": "John Doe",
+		"wins": 2,
+		"losses": 1,
+		"id": 2
+	}
+]

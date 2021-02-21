@@ -1,0 +1,75 @@
+@use 'styles/theme.scss';
+
+.text {
+	text-decoration: none;
+}
+
+.header {
+	@include theme.text-lg;
+	@extend .text;
+	margin-block-end: 1rem;
+}
+
+.subheader {
+	@include theme.text-lg-md;
+	@extend .text;
+	margin-block-end: 0.75rem;
+}
+
+.standard {
+	@include theme.text-md;
+	@extend .text;
+	margin-block-end: 0.5rem;
+}
+
+.small {
+	@include theme.text-sm;
+	@extend .text;
+	margin-block-end: 0.25rem;
+}
+
+.bold {
+	@extend .standard;
+	font-weight: bolder;
+}
+
+.link {
+	@extend .standard;
+	color: theme.color(blue-brand);
+}
+
+.grey {
+	@extend .standard;
+	color: theme.color(grey60);
+}
+
+.error {
+	@extend .standard;
+	color: theme.color(red);
+}
+
+.button-primary {
+	@extend .standard;
+	color: theme.color(white);
+}
+
+.button-secondary {
+	@extend .standard;
+}
+
+.icon {
+	@include theme.text-lg;
+	@extend .text;
+	line-height: 0;
+
+	&:hover {
+		color: theme.color(blue-dark25);
+	}
+	&:active {
+		color: theme.color(blue-dark45);
+	}
+	&:disabled,
+	&[disabled] {
+		color: theme.color(grey20);
+	}
+}

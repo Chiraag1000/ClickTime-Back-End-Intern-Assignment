@@ -1,0 +1,23 @@
+@use 'styles/theme.scss';
+
+.hangman {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+	margin: 1rem;
+}
+
+.word {
+	display: flex;
+	margin: 0 15px;
+}
+
+.letter {
+	height: 27px;
+	width: 30px;
+	margin: 10px 5px;
+	text-align: center;
+	border-bottom: 2px solid theme.color(grey60);
+}

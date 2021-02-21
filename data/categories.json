@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"name": "TV Shows"
+	},
+	{
+		"id": 2,
+		"name": "Movies"
+	},
+	{
+		"id": 3,
+		"name": "Books"
+	},
+	{
+		"id": 4,
+		"name": "Places"
+	},
+	{
+		"id": 5,
+		"name": "Animals"
+	},
+	{
+		"id": 6,
+		"name": "Foods"
+	},
+	{
+		"id": 7,
+		"name": "Custom"
+	}
+]

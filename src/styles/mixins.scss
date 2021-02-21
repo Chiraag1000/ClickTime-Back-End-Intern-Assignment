@@ -1,0 +1,30 @@
+@use './variables.scss';
+
+@mixin text {
+	color: variables.color(dark);
+	font-family: variables.$font-primary;
+}
+
+@mixin text-lg {
+	@include text;
+	font-size: variables.fontSize('large');
+	line-height: variables.lineHeight('large');
+}
+
+@mixin text-lg-md {
+	@include text;
+	font-size: variables.fontSize('large-medium');
+	line-height: variables.lineHeight('large-medium');
+}
+
+@mixin text-md {
+	@include text;
+	font-size: variables.fontSize('medium');
+	line-height: variables.lineHeight('medium');
+}
+
+@mixin text-sm {
+	@include text;
+	font-size: variables.fontSize('small');
+	line-height: variables.lineHeight('small');
+}

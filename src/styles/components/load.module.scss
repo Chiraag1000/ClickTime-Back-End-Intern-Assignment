@@ -1,0 +1,19 @@
+.container {
+	display: grid;
+	gap: 15px;
+	text-align: left;
+}
+
+.username {
+	display: grid;
+}
+
+.selections {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 15px;
+}
+
+.selection {
+	display: grid;
+}

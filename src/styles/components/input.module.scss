@@ -1,0 +1,21 @@
+@use 'styles/theme.scss';
+
+.input {
+	@include theme.text-md;
+	background-color: theme.color(grey02);
+	border: 1px solid theme.color(grey20);
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin: 5px;
+	transition: border-color 0.15s ease-out;
+
+	&:focus {
+		border-color: theme.color(blue-brand);
+		outline-width: 0;
+	}
+	&:disabled,
+	&[disabled] {
+		background-color: theme.color(grey20);
+		border-color: theme.color(grey20);
+	}
+}

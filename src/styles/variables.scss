@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700');
+
+$colors: (
+	blue-brand: #2095F2,
+	blue-dark25: #036EC6,
+	blue-dark35: #025CA6,
+	blue-dark45: #015294,
+	orange: #FF9722,
+	yellow: #FFE047,
+	red: #FF356A,
+	green: #15C0B0,
+	white: #FFFFFF,
+	grey02: #F7FBFC,
+	grey05: #ECF2F5,
+	grey10: #E1E9F0,
+	grey15: #D3DAE0,
+	grey20: #BECAD5,
+	grey40: #889CAF,
+	grey60: #616E7D,
+	dark: #112A48,
+);
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+}
+
+$font-size: (
+	large: 24px,
+	large-medium: 18px,
+	medium: 14px,
+	small: 12px,
+);
+@function fontSize($size) {
+	@return map-get($font-size, $size);
+}
+
+$line-height: (
+	large: 32px,
+	large-medium: 24px,
+	medium: 20px,
+	small: 16px,
+);
+@function lineHeight($size) {
+	@return map-get($line-height, $size);
+}
+
+$font-primary: 'Lato', system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
